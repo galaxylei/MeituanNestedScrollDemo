@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.ruofan.meituan.view.AbstractMeituanShaixuanView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.example.ruofan.meituan.MeituanShaixuanScroller
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="227dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/popup_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+    </com.example.ruofan.meituan.MeituanShaixuanScroller>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="@color/white"
+        android:layout_below="@+id/scroll_view"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/format"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/reset_background"
+            android:text="重置" />
+
+        <TextView
+            android:id="@+id/ok"
+            android:layout_gravity="center"
+            android:background="@color/red_bg_unpressed_color"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="确定" />
+    </LinearLayout>
+
+</com.example.ruofan.meituan.view.AbstractMeituanShaixuanView>

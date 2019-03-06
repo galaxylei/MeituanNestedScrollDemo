@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="InnerListView">
+        <attr name="itemClickable" format="boolean" />
+        <attr name="maxHeight" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="CommonTitleBar">
+        <attr name="show_back" format="boolean"/>
+        <attr name="show_share" format="boolean"/>
+        <attr name="show_title" format="boolean"/>
+        <attr name="title_value" format="string|reference"/>
+    </declare-styleable>
+    <declare-styleable name="RoundCornerImageView">
+        <attr name="cornerRadius" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="StarRatingView">
+        <attr name="star_on" format="reference"/>
+        <attr name="star_off" format="reference"/>
+        <attr name="rating" format="integer"/>
+        <attr name="rateable" format="boolean"/>
+        <attr name="padding" format="integer"/>
+        <attr name="isLogistics" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="DividerLinearLayout">
+        <attr name="divider_height" format="dimension|reference"/>
+        <attr name="divider_color" format="color|reference"/>
+    </declare-styleable>
+    <declare-styleable name="CountDownSpike">
+        <attr name="layout" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="MaxHeightScrollView">
+        <attr name="maxScrollHeight" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="goods_number">
+        <attr name="numberTvWidth" format="dimension"/>
+        <attr name="paddingMinus" format="dimension"/>
+        <attr name="paddingPlus" format="dimension"/>
+        <attr name="minNumber" format="integer"/>
+        <attr name="maxNumber" format="integer"/>
+        <attr name="gn_background" format="reference"/>
+        <attr name="src_minus" format="reference"/>
+        <attr name="src_minus_banned" format="reference"/>
+        <attr name="src_plus" format="reference"/>
+        <attr name="src_plus_banned" format="reference"/>
+        <attr name="bg_background" format="reference"/>
+        <attr name="bg_background_banned" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="SearchView">
+        <attr name="layout_search" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="AnimatedSearchView">
+        <attr name="edit_text_hint" format="string" />
+        <attr name="back_arrow_visible" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="TipLoadingHeader">
+        <attr name="tlh_ref_layout_id" format="reference"/>
+    </declare-styleable>
+</resources>

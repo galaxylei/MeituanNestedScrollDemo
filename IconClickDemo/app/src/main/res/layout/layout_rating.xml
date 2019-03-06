@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical|fill_horizontal"
+    android:orientation="horizontal">
+
+    <com.example.ruofan.iconclickdemo.IconView
+        android:id="@+id/first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:textSize="20dp" />
+
+    <com.example.ruofan.iconclickdemo.IconView
+        android:id="@+id/second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11dp"
+        android:clickable="true"
+        android:textSize="20dp" />
+
+    <com.example.ruofan.iconclickdemo.IconView
+        android:id="@+id/third"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11dp"
+        android:clickable="true"
+        android:textSize="20dp" />
+
+    <com.example.ruofan.iconclickdemo.IconView
+        android:id="@+id/forth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11dp"
+        android:clickable="true"
+        android:textSize="20dp" />
+
+    <com.example.ruofan.iconclickdemo.IconView
+        android:id="@+id/fifth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11dp"
+        android:clickable="true"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/score_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11dp"
+        android:textColor="@color/span_unpressed_color"
+        android:textSize="12dp"/>
+
+</LinearLayout>

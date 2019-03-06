@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="pink">#FFCDD2</color>
+    <color name="pink1">#FFEBEE</color>
+    <!--<color name="white">#FFFFFF</color>-->
+    <color name="white_alpha">#E0E0E0</color>
+    <color name="app_base_bubble_background_unpressed">#b3000000</color>
+    <!--<color name="app_base_bubble_background_pressed">#cc000000</color>-->
+    <color name="white_alpha_eight">#80000000</color>
+    <color name="white_alpha_night">#99000000</color>
+    <color name="black_eight">#80000000</color>
+    <color name="black_night">#99000000</color>
+    <color name="app_base_shade_5per">#ffffffff</color>
+    <!--<color name="transparent">@android:color/transparent</color>-->
+    <!--<color name="span_pressed_color">#006AE6</color>-->
+    <!--<color name="span_unpressed_color">#0076FF</color>-->
+    <color name="pdd_text_grey_light">#ffffff</color>
+    <!--<color name="choice_icon_unpressed_color">#58595B</color>-->
+    <!--<color name="choice_icon_pressed_color">#808182</color>-->
+    <color name="green">#1ECD16</color>
+    <!--<color name="transparent">@android:tran</color>-->
+
+
+    <color name="app_base_address_text_name">@color/pdd_text_black</color>
+    <color name="app_base_address_text_default">#ff999999</color>
+    <color name="app_base_address_create_line">@color/pdd_space</color>
+    <color name="app_base_address_set_default_text_color">@color/pdd_main_color</color>
+    <color name="app_base_address_set_undefault_text_color">#ff999999</color>
+
+    <color name="app_base_home_background">@color/pdd_background_white</color>
+    <color name="app_base_default_background">@color/app_base_home_background</color>
+
+    <color name="app_base_chat_background">@color/pdd_background_white</color>
+    <!--<color name="app_base_bubble_background_unpressed">#b3000000</color>-->
+
+    <color name="new_page_title_bar">#f8f8f8</color>
+
+    <drawable name="app_base_favor_more_press">@color/pdd_main_color</drawable>
+    <drawable name="app_base_favor_more_normal">@color/pdd_text_grey_deep</drawable>
+
+    <color name="pdd_standard_color">#e02e24</color>
+    <color name="pdd_text_black">#151516</color>
+    <color name="pdd_text_grey_deep">#58595B</color>
+    <!--<color name="pdd_text_grey_light">#9C9C9C</color>-->
+    <color name="pdd_text_grey_light_translucent">#B39C9C9C</color>
+    <color name="pdd_text_grey_transparent_59">#BFBFBF</color>
+    <color name="pdd_divider">#D2D2D2</color>
+    <color name="pdd_title_bar_divider">#D2D2D2</color>
+    <color name="pdd_space">#E0E0E0</color>
+    <color name="pdd_background_white">#F4F4F4</color>
+    <color name="pdd_green">#1ECD16</color>
+    <color name="pdd_green_dark">#25ae5f</color>
+    <color name="pdd_blue">#1AB5F5</color>
+    <color name="pdd_yellow_dark">#FFC32A</color>
+    <color name="pdd_pink">#FF70B0</color>
+    <color name="pdd_red">@color/pdd_main_color</color>
+    <color name="pdd_main_color_pressed">#BC271E</color>
+    <color name="pdd_text_grey_pressed">#669c9c9c</color>
+    <color name="pdd_standard_color_pressed">#66e02e24</color>
+    <color name="pdd_bg_pressed">#F2F2F2</color>
+
+    <color name="pdd_main_color">#e02e24</color>
+    <color name="pdd_main_color_80">#80e02e24</color>
+    <color name="pdd_btn_unselected">@color/CCCCCC</color>
+    <color name="pdd_btn_login">#E6574F</color>
+
+    <color name="pdd_selected">#FDF4F4</color>
+
+    <color name="CCCCCC">#CCCCCC</color>
+    <color name="F4F4F4">#F4F4F4</color>
+
+    <color name="black">@android:color/black</color>
+    <color name="black_333333">#333333</color>
+    <color name="white">@android:color/white</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="red">#ff2471</color>
+    <color name="red_fe243d">#fe243d</color>
+    <color name="wheel_timebtn_nor">#54a3fa</color>
+    <color name="wheel_timebtn_pre">#CCCCCC</color>
+    <color name="grey_333333">#151516</color>
+    <color name="grey_989898">#989898</color>
+    <color name="grey_e1e1e1">#e1e1e1</color>
+    <color name="grey_coupon_time">#9c9c9c</color>
+    <color name="grey_d9d9d9">#d9d9d9</color>
+    <color name="red_df2126">#df2126</color>
+    <color name="black_5c5c5c">#5c5c5c</color>
+
+    <color name="translucent">#aa000000</color>
+    <color name="translucent_cc">#CC000000</color>
+
+    <color name="default_decor_color">@color/pdd_background_white</color>
+
+    <!--错误页的背景色-->
+    <color name="error_bg_color">@color/pdd_background_white</color>
+
+    <color name="bg_image_dialog">#CC000000</color>
+
+    <color name="dialog_transport">#60000000</color>
+    <color name="bottle_dialog_bg">#cc000000</color>
+
+    <color name="picc_green">#5BC256</color>
+
+    <!--标题栏标题色-->
+    <color name="pdd_title_bar_title_color">@color/pdd_text_black</color>
+    <color name="pdd_title_bar_icon_color">@color/pdd_text_grey_deep</color>
+    <!--cell点击态颜色-->
+    <color name="cell_click_color">#EBEBEB</color>
+    <!--商详大促点击态颜色-->
+    <color name="cell_click_color_pink">#F9D7D5</color>
+    <color name="app_base_pressed_5per">#f2f2f2</color>
+    <color name="choice_pressed_color">#E0E0E0</color>
+    <color name="choice_unpressed_color">#F2F2F2</color>
+    <color name="choice_icon_unpressed_color">#58595B</color>
+    <color name="choice_icon_pressed_color">#808182</color>
+    <color name="span_pressed_color">#006AE6</color>
+    <color name="span_unpressed_color">#0076FF</color>
+    <color name="red_bg_unpressed_color">#E02E24</color>
+    <color name="red_bg_pressed_color">#C51E14</color>
+    <color name="red_bg_white_text_pressed_color">#4DFFFFFF</color>
+    <color name="red_bg_white_text_unpressed_color">#FFFFFF</color>
+    <color name="yellow_bg_unpressed_color">#FFBB00</color>
+    <color name="yellow_bg_pressed_color">#F69E20</color>
+    <color name="yellow_bg_white_text_unpressed_color">#FFFFFF</color>
+    <color name="yellow_bg_white_text_pressed_color">#FCE2BC</color>
+    <color name="white_bg_pressed_color">#EBEBEB</color>
+    <color name="white_bg_unpressed_color">#FFFFFF</color>
+    <color name="white_bg_black_text_pressed_color">#878789</color>
+    <color name="white_bg_black_text_unpressed_color">#151516</color>
+    <color name="pink_bg_unpressed_color">#F4ABA7</color>
+    <color name="pink_bg_pressed_color">#F78B85</color>
+    <color name="pink_bg_white_text_pressed_color">#4DFFFFFF</color>
+    <color name="rose_bg_pressed_color">#C60937</color>
+    <color name="rose_bg_unpressed_color">#E51A4C</color>
+    <color name="rose_bg_white_text_pressed_color">#EEB5C3</color>
+    <color name="close_pressed_color">#5D5D5D</color>
+    <color name="close_unpressed_color">#666666</color>
+    <color name="close_unpressed_bg_color">#E0E0E0</color>
+    <color name="close_pressed_bg_color">#C0C0C0</color>
+    <color name="app_base_bubble_background_pressed">#CC000000</color>
+    <color name="app_base_bubble_white_text_pressed">#B3ffffff</color>
+    <color name="app_base_red_star_pressed_color">#C51E14</color>
+    <color name="app_base_red_star_unpressed_color">#E02E24</color>
+    <color name="app_base_gray_star_pressed_color">#7B7A7A</color>
+    <color name="app_base_gray_star_unpressed_color">#D2D2D2</color>
+    <color name="red_text_without_bg_pressed_color">#C51E14</color>
+    <color name="red_text_without_bg_unpressed_color">#E02E24</color>
+    <color name="blue_text_without_bg_pressed_color">#0065D9</color>
+    <color name="blue_text_without_bg_unpressed_color">#0076FF</color>
+    <color name="black_text_without_bg_pressed_color">#9C9C9C</color>
+    <color name="black_text_without_bg_unpressed_color">#151516</color>
+    <color name="grey_text_without_bg_pressed_color">#58595B</color>
+    <color name="grey_text_without_bg_unpressed_color">#9C9C9C</color>
+    <!--<color name="green_text_without_bg_pressed_color">#00953F</color>-->
+    <color name="green_text_without_bg_unpressed_color">#26AE5F</color>
+    <color name="mall_customer_service_text_pressed_color">#C51E14</color>
+    <color name="mall_customer_service_text_unpressed_color">#E02E24</color>
+
+    <!--旗舰店专卖店等店名tag显示相关颜色-->
+    <color name="app_base_bg_mall_name_start">#F1DAB5</color>
+    <color name="app_base_bg_mall_name_end">#ECCC95</color>
+    <color name="app_base_text_mall_name_normal">#777777</color>
+    <color name="app_base_text_mall_name_flagship">#572600</color>
+    <color name="app_base_line_grey">#e0e0e0</color>
+</resources>
+

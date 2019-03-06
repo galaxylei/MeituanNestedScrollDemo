@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.ruofan.iconclickdemo.GoTopView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gotop"
+    android:layout_width="45dp"
+    android:layout_height="45dp"
+    android:layout_gravity="center"
+    android:layout_marginBottom="17dp"
+    android:layout_marginRight="17dp"
+    android:background="@drawable/app_base_icon_back_top"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <!--<View-->
+        <!--android:layout_width="70dp"-->
+        <!--android:layout_height="70dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:background="@drawable/app_base_go_top_bg_mask"/>-->
+
+    <View
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/app_base_go_top_mask" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="9dp"
+        android:text="顶部"
+        android:textColor="@drawable/app_base_go_top_text"
+        android:textSize="10dp" />
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal|bottom"-->
+        <!--android:layout_marginBottom="9dp"-->
+        <!--android:text="顶部"-->
+        <!--android:textColor="@drawable/app_base_go_top_text"-->
+        <!--android:textSize="10dp" />-->
+</com.example.ruofan.iconclickdemo.GoTopView>

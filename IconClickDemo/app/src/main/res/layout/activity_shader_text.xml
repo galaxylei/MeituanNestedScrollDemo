@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".ShaderTextActivity"
+    android:background="@color/black">
+    <com.example.ruofan.iconclickdemo.MyShaderTextView
+        android:id="@+id/shader_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="3"
+        android:lineSpacingExtra="7dp"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:scrollbars="vertical"
+        android:text="世界时UT[1]  即格林尼治[1]（见分至点）和平太阳时。"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:textSize="10sp"
+        android:textColor="@color/white"
+        android:scrollbars="vertical"
+        android:fadeScrollbars="false"
+        android:text="世界时UT[1]  即格林尼治fdfdfadfdfdfdffadafdfdafadfadfasdfadfadfadfdfdfdfdfdfdfdf[1] 测量地球自转，人们在地球上选取了两个基本参考点：春分点（见分至点）和平太阳点，由此确定的时间分别称为恒星时和平太阳时。"
+    />
+</LinearLayout>

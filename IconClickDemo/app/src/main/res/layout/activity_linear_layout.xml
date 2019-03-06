@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:layout_marginBottom="8dp"
+    android:orientation="vertical"
+    android:id="@+id/my_layout"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rl_personal_total_orders"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="我的订单"
+            android:textColor="#151516"
+            android:textSize="17dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right|center">
+
+            <TextView
+                android:id="@+id/tv_personal_unpaid"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="7dp"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:text="查看全部"
+                android:textColor="@color/app_base_grey_text_without_bg_press_state"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/iv_personal_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="12dp"
+                android:text="查看全部"
+                android:focusable="true"
+                android:textColor="@color/app_base_grey_text_without_bg_press_state"
+                android:textSize="12dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="7dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="7dp"
+                    android:layout_height="7dp"
+                    android:background="@drawable/message_notify" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:includeFontPadding="false"
+                    android:text="还有"
+                    android:textColor="#9c9c9c"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/pdd_main_color"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="未付款"
+                    android:textColor="#9c9c9c"
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!--<ImageView-->
+        <!--android:id="@+id/iv_personal_arrow"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:layout_marginRight="12dp"-->
+        <!--android:src="@mipmap/ic_right_arrow" />-->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_personal_pending_pay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:id="@+id/iv_refunds"
+                android:layout_width="26dp"
+                android:layout_height="27dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:text="\ue6e8"
+                android:textColor="@color/pdd_main_color"
+                android:textSize="24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_refunds"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="11dp"
+                android:includeFontPadding="false"
+                android:text="待付款"
+                android:textColor="@color/pdd_main_color"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/tv_pending_pay_unread"
+                tools:text="5"
+                tools:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/iv_refunds"
+                android:layout_alignTop="@+id/iv_refunds"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="-14dp"
+                android:gravity="center"
+                android:paddingBottom="2px"
+                android:textColor="@color/pdd_main_color"
+                android:textSize="11dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_personal_puzzle_group"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clipChildren="false"
+            android:clipToPadding="false">
+
+            <TextView
+                android:id="@+id/iv_puzzle_group"
+                android:layout_width="26dp"
+                android:layout_height="27dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:text="\ue6e5"
+                android:textColor="@color/pdd_main_color"
+                android:textSize="24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_puzzle_group"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="11dp"
+                android:includeFontPadding="false"
+                android:text="待分享"
+                android:textColor="@color/pdd_main_color"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/tv_puzzle_group_unread"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/iv_puzzle_group"
+                android:layout_alignTop="@+id/iv_puzzle_group"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="-14dp"
+                android:gravity="center"
+                android:paddingBottom="2px"
+                android:textColor="@color/pdd_main_color"
+                android:textSize="11dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_personal_to_be_shipped"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clipChildren="false"
+            android:clipToPadding="false">
+
+            <TextView
+                android:id="@+id/iv_to_be_shipped"
+                android:layout_width="26dp"
+                android:layout_height="27dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:text="\ue6e7"
+                android:textColor="@color/pdd_main_color"
+                android:textSize="24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_to_be_shipped"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="11dp"
+                android:includeFontPadding="false"
+                android:text="待发货"
+                android:textColor="@color/pdd_main_color"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/tv_personal_to_be_shipped_unread"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/iv_to_be_shipped"
+                android:layout_alignTop="@+id/iv_to_be_shipped"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="-14dp"
+                android:gravity="center"
+                android:paddingBottom="2px"
+                android:textColor="@color/pdd_main_color"
+                android:textSize="11dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_receipt_of_goods"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clipChildren="false"
+            android:clipToPadding="false">
+
+            <TextView
+                android:id="@+id/iv_receipt_of_goods"
+                android:layout_width="26dp"
+                android:layout_height="27dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:text="\ue6ed"
+                android:textColor="@color/pdd_main_color"
+                android:textSize="24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_receipt_of_goods"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="11dp"
+                android:includeFontPadding="false"
+                android:text="待收货"
+                android:textColor="@color/pdd_main_color"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/tv_receipt_of_goods_unread"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/iv_receipt_of_goods"
+                android:layout_alignTop="@+id/iv_receipt_of_goods"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="-14dp"
+                android:gravity="center"
+                android:paddingBottom="2px"
+                android:textColor="@color/pdd_main_color"
+                android:textSize="11dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_personal_to_be_comment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clipChildren="false"
+            android:clipToPadding="false">
+
+            <TextView
+                android:id="@+id/iv_to_be_comment"
+                android:layout_width="26dp"
+                android:layout_height="27dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:text="\ue6ee"
+                android:textColor="@color/pdd_main_color"
+                android:textSize="24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_to_be_comment"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="11dp"
+                android:includeFontPadding="false"
+                android:text="待评价"
+                android:textColor="@color/pdd_main_color"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/tv_to_be_comment_unread"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/iv_to_be_comment"
+                android:layout_alignTop="@+id/iv_to_be_comment"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="-14dp"
+                android:gravity="center"
+                android:paddingBottom="2px"
+                android:textColor="@color/pdd_main_color"
+                android:textSize="11dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
+

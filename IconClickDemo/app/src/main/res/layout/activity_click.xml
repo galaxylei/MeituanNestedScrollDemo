@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.ruofan.iconclickdemo.MyClickLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_click"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClickActivity">
+
+    <com.example.ruofan.iconclickdemo.MyImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image"
+        android:src="@drawable/icon_share_qq_zone" />
+
+</com.example.ruofan.iconclickdemo.MyClickLayout>
