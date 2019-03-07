@@ -19,6 +19,7 @@ public class MeituanViewHolder extends RecyclerView.ViewHolder {
     RecyclerView recyclerView;
     private List<HotelConfig> list;
     private HotelConfigAdapter hotelConfigAdapter;
+    private int lastTagId;
 
     public MeituanViewHolder(View itemView, List<HotelConfig> list) {
         super(itemView);
@@ -29,6 +30,8 @@ public class MeituanViewHolder extends RecyclerView.ViewHolder {
         recyclerView.setLayoutManager(new LinearLayoutManager(itemView.getContext(), LinearLayoutManager.HORIZONTAL, false));
         recyclerView.setAdapter(hotelConfigAdapter);
     }
+
+
 
 
     public void bindDatas(List<HotelConfig> list) {

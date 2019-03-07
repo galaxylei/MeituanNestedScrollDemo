@@ -2,7 +2,7 @@
 <com.example.ruofan.meituan.view.NestScrollingLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/wrapper_layout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="1000dp"
     android:orientation="vertical">
 
     <LinearLayout
@@ -28,12 +28,12 @@
 
     <com.example.ruofan.meituan.view.StickyLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
-        <android.support.v7.widget.RecyclerView
+        <com.example.ruofan.meituan.view.MyScrollRecyclerView
             android:id="@+id/meituan_recyclerView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="match_parent" />
     </com.example.ruofan.meituan.view.StickyLayout>
 
 </com.example.ruofan.meituan.view.NestScrollingLayout>

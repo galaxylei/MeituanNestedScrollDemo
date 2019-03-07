@@ -1,46 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
-    android:layout_height="85dp"
-    android:gravity="center"
-    android:orientation="vertical"
-    android:paddingLeft="10dp"
-    android:paddingRight="10dp">
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical">
 
-    <FrameLayout
-        android:id="@+id/layout_background"
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/circle_drawable">
+        android:layout_height="85dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
 
-        <ImageView
-            android:id="@+id/hotel_image"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:src="@drawable/icon_share_qq" />
-    </FrameLayout>
-
-    <View
-        android:id="@+id/decoration"
-        android:layout_width="2dp"
-        android:layout_height="12dp"
-        android:layout_below="@+id/layout_background"
-        android:background="@color/transparent" />
-
-    <FrameLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true">
-
-        <TextView
-            android:id="@+id/hotel_name"
+        <FrameLayout
+            android:id="@+id/layout_background"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/layout_background"
-            android:layout_marginBottom="1dp"
-            android:text="海南鸡煲饭" />
-    </FrameLayout>
-</RelativeLayout>
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/circle_drawable">
+
+            <ImageView
+                android:id="@+id/hotel_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_share_qq" />
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/hotel_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/layout_background"
+        android:layout_marginBottom="1dp"
+        android:text="海南鸡煲饭" />
+</LinearLayout>

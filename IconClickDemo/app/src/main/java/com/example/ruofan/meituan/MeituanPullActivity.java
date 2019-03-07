@@ -21,7 +21,7 @@ import com.example.ruofan.meituan.view.MyScrollRecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MeituanPullActivity extends AppCompatActivity implements GroupListener {
+public class MeituanPullActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
 
@@ -81,10 +81,13 @@ public class MeituanPullActivity extends AppCompatActivity implements GroupListe
         recyclerView.setAdapter(adapter);
 
         hotelConfigAdapter = new HotelConfigAdapter(list);
+
+
         recyclerViewH.setAdapter(hotelConfigAdapter);
         recyclerViewH.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
 
     }
+
 
     private void initView() {
         recyclerView = findViewById(R.id.meituan_recyclerView);
@@ -94,15 +97,6 @@ public class MeituanPullActivity extends AppCompatActivity implements GroupListe
         linearlayout_head = findViewById(R.id.linearlayout_head);
         inner_scroller = new Scroller(this);
 
-    }
-
-    @Override
-    public View getGroupView(int position) {
-        if (adapter != null && recyclerView != null) {
-            View view = recyclerView.getLayoutManager().findViewByPosition(position);
-            return view;
-        }
-        return null;
     }
 
 

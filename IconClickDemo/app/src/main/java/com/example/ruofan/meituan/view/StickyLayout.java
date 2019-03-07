@@ -94,7 +94,6 @@ public class StickyLayout extends FrameLayout {
     private void updateStickyView() {
         RecyclerView.Adapter adapter = recyclerView.getAdapter();
         if (adapter instanceof MeituanAdapter) {
-            MeituanAdapter meituanAdapter = (MeituanAdapter) adapter;
             View view = LayoutInflater.from(mContext).inflate(R.layout.item, null);
             mStickyLayout.addView(view);
             mStickyLayout.setVisibility(VISIBLE);
