@@ -1,5 +1,6 @@
 package com.example.ruofan.meituan;
 
+import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -21,7 +22,7 @@ import com.example.ruofan.meituan.view.MyScrollRecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MeituanPullActivity extends AppCompatActivity {
+public class MeituanPullActivity extends FragmentActivity {
 
     private RecyclerView recyclerView;
 
@@ -34,8 +35,6 @@ public class MeituanPullActivity extends AppCompatActivity {
     private ViewStub viewStub;
 
     List<HotelConfig> list;
-
-    int deltaY = 0;
 
     private int mTouchSlop;
 

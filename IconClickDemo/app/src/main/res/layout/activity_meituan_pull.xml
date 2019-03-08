@@ -3,8 +3,9 @@
     android:id="@+id/wrapper_layout"
     android:layout_width="match_parent"
     android:layout_height="1000dp"
+    android:background="@color/white"
     android:orientation="vertical">
-
+    <include layout="@layout/activity_header"/>
     <LinearLayout
         android:id="@+id/linearlayout_head"
         android:layout_width="match_parent"
