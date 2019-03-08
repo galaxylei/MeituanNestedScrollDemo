@@ -12,6 +12,7 @@ import com.example.ruofan.iconclickdemo.R;
 import com.example.ruofan.meituan.bean.HotelConfig;
 import com.example.ruofan.meituan.bean.MeituanConfig;
 import com.example.ruofan.meituan.bean.NormalConfig;
+import com.example.ruofan.meituan.holder.HotelNameViewHolder;
 import com.example.ruofan.meituan.holder.MeituanViewHolder;
 import com.example.ruofan.meituan.holder.ShaixuanViewHolder;
 
@@ -27,6 +28,7 @@ public class MeituanAdapter extends RecyclerView.Adapter {
     private static final int NORMAL_POSITION = 11111;
 
     private static final int SHAIXUAN_POSTION = 222222;
+    private static final int HOTEL_NAME = 333333;
 
 
     private MeituanConfig meituanConfig;
@@ -73,6 +75,10 @@ public class MeituanAdapter extends RecyclerView.Adapter {
                 view = LayoutInflater.from(parent.getContext()).inflate(R.layout.normal_layout, parent, false);
                 holder = new NormalViewHolder(view);
                 break;
+            case HOTEL_NAME:
+                view = LayoutInflater.from(parent.getContext()).inflate(R.layout.hotel_name_layout, parent, false);
+                holder = new HotelNameViewHolder(view);
+                break;
 //            case  SHAIXUAN_POSTION:
 //                view = LayoutInflater.from(parent.getContext()).inflate(R.layout.shaixuan_layout, parent, false);
 //                holder = new ShaixuanViewHolder(view);
@@ -92,11 +98,19 @@ public class MeituanAdapter extends RecyclerView.Adapter {
         } else if (holder instanceof NormalViewHolder) {
             NormalViewHolder normalViewHolder = (NormalViewHolder) holder;
             bindNormalData(normalViewHolder, meituanConfig.getNormal_list().get(position - 1));
+        } else if (holder instanceof HotelNameViewHolder) {
+            HotelNameViewHolder hotelNameViewHolder = (HotelNameViewHolder) holder;
+            bindHoltelNameData(hotelNameViewHolder,meituanConfig.getNormal_list().get(position - 2));
         }
 //        else if (holder instanceof ShaixuanViewHolder) {
 //            ShaixuanViewHolder shaixuanViewHolder = (ShaixuanViewHolder) holder;
 //            shaixuanViewHolder.bindData();
 //        }
+    }
+
+    private void bindHoltelNameData(HotelNameViewHolder hotelNameViewHolder, NormalConfig normalConfig) {
+
+        hotelNameViewHolder.bindHotelName(normalConfig);
     }
 
     public RecyclerView.Adapter getInnerAdapter() {
@@ -122,9 +136,9 @@ public class MeituanAdapter extends RecyclerView.Adapter {
         if (position == 0) {
             return SLIDE_POSITION;
         }
-//        else if (position == 1) {
-//            return SHAIXUAN_POSTION;
-//        }
+        else if (position == 1) {
+            return HOTEL_NAME;
+        }
         else {
             return NORMAL_POSITION;
         }
@@ -149,5 +163,6 @@ public class MeituanAdapter extends RecyclerView.Adapter {
             textView = itemView.findViewById(R.id.normal_text);
         }
     }
+
 
 }

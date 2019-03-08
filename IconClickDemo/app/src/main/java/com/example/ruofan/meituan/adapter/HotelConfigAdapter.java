@@ -25,6 +25,8 @@ public class HotelConfigAdapter extends RecyclerView.Adapter {
     private int lastTagId = 0;
     private HotelConfigViewHolder hotelConfigViewHolder;
 
+    private static final int HOTEL_NAME = 111111;
+
     public HotelConfigAdapter(List<HotelConfig> list) {
         this.list = list;
     }
@@ -68,6 +70,12 @@ public class HotelConfigAdapter extends RecyclerView.Adapter {
         }
     }
 
+    @Override
+    public int getItemViewType(int position) {
+
+        return super.getItemViewType(position);
+    }
+
     public void setLastTagId() {
         this.lastTagId = tagId;
     }
@@ -100,4 +108,6 @@ public class HotelConfigAdapter extends RecyclerView.Adapter {
             hotel_image_image = itemView.findViewById(R.id.hotel_image);
         }
     }
+
+
 }
